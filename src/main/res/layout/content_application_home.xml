@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dev.apay.application.ApplicationHome"
+    tools:showIn="@layout/app_bar_application_home">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/offers_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/black_overlay"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/offersTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_anchor="@+id/offers_viewPager"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offers_viewPager">
+
+        <Button
+            android:id="@+id/add_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="Add Money" />
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pay" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mobile_recharge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Mobile Recharge"
+        android:background="#00FFFFFF"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/flight_booking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/flight_booking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="#00FFFFFF"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="Flight Booking"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_navigation"/>
+
+</android.support.constraint.ConstraintLayout>

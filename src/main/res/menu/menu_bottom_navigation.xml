@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/emergency_loan_menu"
+        android:icon="@color/black_overlay"
+        android:title="Emergency Loan" />
+
+    <item
+        android:id="@+id/account_menu"
+        android:icon="@drawable/account_menu"
+        android:title="Account" />
+
+    <item
+        android:id="@+id/recharge_point_menu"
+        android:icon="@color/black_overlay"
+        android:title="Recharge Point" />
+
+</menu>
