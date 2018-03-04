@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/merchants"
+            android:icon="@drawable/merchants_icon"
+            android:title="Merchants" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings" />
+        <item
+            android:id="@+id/help_and_support"
+            android:icon="@drawable/help_icon"
+            android:title="Help and Support" />
+        <item
+            android:id="@+id/share_app"
+            android:icon="@drawable/share_icon"
+            android:title="Share App" />
+        <item
+            android:id="@+id/tutorials"
+            android:icon="@drawable/tutorials_icon"
+            android:title="Tutorials" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/log_out_icon"
+            android:title="Log out" />
+    </group>
+
+</menu>

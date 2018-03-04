@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/tutorials_icon"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/emergency_loan_menu"
+        android:icon="@color/black_overlay"
+        android:title="Loan" />
+
+    <item
+        android:id="@+id/account_menu"
+        android:icon="@drawable/account_menu"
+        android:title="Account" />
+
+    <item
+        android:id="@+id/recharge_point_menu"
+        android:icon="@color/black_overlay"
+        android:title="Recharge" />
+
+</menu>
